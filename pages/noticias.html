@@ -5,34 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/pokeball.png">
+    <meta name="description" content="Campeonato Internacional y Mundial de Juego de Cartas  y videojeugos Pokemon." />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="../assets/css/estilos.css">
+
+    <link rel="shortcut icon" href="../assets/img/pokeball.png">
     <title>Play! Pokémon</title>
 </head>
 
 <body id="backgroundNoticias">
     <header>
-        <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Logo del campeonato mundial pokémon"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="#">NOTICIAS</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="ganadores.html">GANADORES</a></li>
-                <li><a href="inscribirme.html">INSCRIBIRME</a></li>
-            </ul>
+
+        <!-- NAV + LOGO -->
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.jpg"
+                    alt="Logo del campeonato mundial pokémon"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NOTICIAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">GALERIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ganadores.html">GANADORES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inscribirme.html">INSCRIBIRME</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <div class="h1ImgPaginas">
-                <img src="../assets/img/pikachu.png" class="imgTitulo" alt="Rostro del pokémon Pikachu">
-                <h1 class="h1Paginas">Noticias</h1>
+        <section class="container-fluid">
+
+            <!-- ENCABEZADO DE PÁGINA -->
+
+            <div class="row encabezadoPaginas">
+                <img src="../assets/img/pikachu.png" class="col-xs-3 imgEncabezado" alt="Rostro del pokémon Pikachu">
+                <h1 class="col-xs-9 títuloEncabezado">Noticias</h1>
             </div>
-            <article id="fondoNoticiaUno">
-                <h2 class="tituloNoticiaImpar">Serie de Campeonatos Pokémon 2022</h2>
-                <img src="../assets/img/playpokemon2022.jpg" class="imgNoticiaImpar" alt="Jugadores en competencia">
-                <div class="parrafoNoticiaImpar" id="parrafoNoticiaUno">
+
+            <!-- NOTICIA UNO -->
+
+            <article class="row flexNoticia" id="fondoNoticiaUno">
+                <img src="../assets/img/playpokemon2022.jpg" class="col-xs-12 col-md-6 imgNoticia"
+                    alt="Jugadores en competencia">
+                <div class="col-xs-12 col-md-6 parrafoNoticia parrafoNoticiaImpar">
+                    <h2 class="tituloNoticia">Serie de Campeonatos Pokémon 2022</h2>
                     <p>
                         Compite contra otros jugadores de videojuegos, <abbr
                             title="Juego de Cartas Coleccionables">JCC</abbr> Pokémon, Pokkén Tournament DX y Pokémon GO
@@ -41,20 +67,16 @@
                         Campeonatos
                         Pokémon! Usa el localizador de eventos para averiguar dónde puedes competir en tu área.
                     </p>
-                    <p>
-                        Para la mayoría de los torneos más pequeños no es necesario registrarse previamente. Todo lo que
-                        necesitas hacer es presentarte con una baraja válida de JCC Pokémon o una consola y videojuego.
-                        Los
-                        torneos a nivel de los Campeonatos Regionales y superiores pueden requerir que te registres por
-                        adelantado. Asegúrate de consultar el programa del torneo para ver los detalles.
-                    </p>
                 </div>
             </article>
-            <article id="fondoNoticiaDos">
-                <h2 class="tituloNoticiaPar">El Mundial Pokémon vuelve con Pokémon Go</h2>
-                <img src="../assets/img/pokemongo.jpg" class="imgNoticiaPar"
+
+            <!-- NOTICIA DOS -->
+
+            <article class="row flexNoticia" id="fondoNoticiaDos">
+                <img src="../assets/img/pokemongo.jpg" class="col-xs-12 col-md-6 imgNoticia"
                     alt="Logo Pókemon Go y Pókemon World Championships">
-                <div class="parrafoNoticiaPar" id="parrafoNoticiaDos">
+                <div class="col-xs-12 col-md-6 parrafoNoticia">
+                    <h2 class="tituloNoticia">Mundial Pokémon & Pokémon Go</h2>
                     <p>
                         Vuelve el Pokémon World Championship tras dos años de ausencia. La mayor cita competitiva de la
                         legendaria saga de Nintendo regresa en 2022 con novedades. Pokémon Go, el popular videojuego de
@@ -62,20 +84,16 @@
                         divididos en
                         categoría Senior y Master.
                     </p>
-                    <p>
-                        Pokémon Go se suma al resto de modalidades que a día de hoy forman parte del campeonato Mundial:
-                        videojuegos, juego de cartas coleccionables y fighting con Pokkén Tournament DX. Un Mundial cada
-                        vez
-                        más grande y que en cuestión de unos años ha añadido nuevas modalidades que aportan mayor
-                        profundidad y relevancia al evento.
-                    </p>
                 </div>
             </article>
-            <article id="fondoNoticiaTres">
-                <h2 class="tituloNoticiaImpar">Campeonatos Internacionales Pokémon 2022</h2>
-                <img src="../assets/img/championshipsNorthAmerica.jpg" class="imgNoticiaImpar"
+
+            <!-- NOTICIA TRES -->
+
+            <article class="row flexNoticia" id="fondoNoticiaTres">
+                <img src="../assets/img/championshipsNorthAmerica.jpg" class="col-xs-12 col-md-6 imgNoticia"
                     alt="Jugadores compitiendo en la Championships North America.">
-                <div class="parrafoNoticiaImpar" id="parrafoNoticiaTres">
+                <div class="col-xs-12 col-md-6 parrafoNoticia parrafoNoticiaImpar">
+                    <h2 class="tituloNoticia">Campeonatos Internacionales Pokémon</h2>
                     <p>
                         Los Campeonatos Internacionales Pokémon atraen a jugadores de todo el mundo durante la temporada
                         de
@@ -86,20 +104,16 @@
                         Para la temporada 2022, estos eventos también acogerán los eventos clasificatorios para los
                         Campeonatos Mundiales de Pokémon GO y Pokkén Tournament DX.
                     </p>
-                    <p>
-                        Para los Campeonatos Internacionales es necesario realizar la inscripción en línea y, por lo
-                        general, el pago de una tasa de inscripción. Las entradas pueden llegar a agotarse. Usa el
-                        localizador de eventos para conocer más detalles sobre cada evento, incluida la información
-                        sobre el
-                        proceso de inscripción.
-                    </p>
                 </div>
             </article>
-            <article id="fondoNoticiaCuatro">
-                <h2 class="tituloNoticiaPar">Campeonato Mundial Pokémon 2022</h2>
-                <img src="../assets/img/pokemonworldchampionshipstcgvg.jpg" class="imgNoticiaPar"
+
+            <!-- NOTICIA CUATRO -->
+
+            <article class="row flexNoticia" id="fondoNoticiaCuatro">
+                <img src="../assets/img/pokemonworldchampionshipstcgvg.jpg" class="col-xs-12 col-md-6 imgNoticia"
                     alt="Ganadores del torneo Pokémon World Championships.">
-                <div class="parrafoNoticiaPar" id="parrafoNoticiaCuatro">
+                <div class="col-xs-12 col-md-6 parrafoNoticia">
+                    <h2 class="tituloNoticia">Campeonato Mundial Pokémon</h2>
                     <p>
                         El Campeonato Mundial Pokémon representa la cima del juego competitivo en el mundo Pokémon.
                         Normalmente se celebra cada año en agosto, y en él se reúnen los mejores jugadores de Pokémon de
@@ -108,34 +122,41 @@
                         año
                         siguiente.
                     </p>
-                    <p>
-                        Los jugadores de videojuegos y <abbr title="Juego de Cartas Coleccionables">JCC</abbr> Pokémon
-                        se
-                        clasifican para el Campeonato Mundial ganando Championship Points en eventos a lo largo de la
-                        temporada de la Serie de Campeonatos. El número de Championship Points que se requieren para
-                        recibir
-                        una invitación depende de la zona clasificatoria geográfica y de la categoría de edad. Los
-                        mejores
-                        jugadores avanzarán automáticamente al segundo día y, algunos de ellos, tendrán cubiertos los
-                        gastos
-                        de avión y alojamiento para asistir al evento.
-                    </p>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <a href="../index.html"><img src="../assets/img/logo.jpg" class="iconoFooter"
-                alt="Logo del campeonato mundial pokémon"></a>
-        <div class="iconoRedes">
-            <a href="https://www.instagram.com/pokemon/?hl=es-la"><img src="../assets/img/instagramsvg.svg"
-                    class="iconoRedesIndividual" alt="ícono de instagram"></a>
-            <a href="https://twitter.com/playpokemon"><img src="../assets/img/twittersvg.svg"
-                    class="iconoRedesIndividual" alt="ícono de twitter"></a>
-            <a href="https://www.facebook.com/PokemonOficialLatAm/?brand_redir=230809307041021">
-                <img src="../assets/img/facebooksvg.svg" class="iconoRedesIndividual" alt="ícono de facebook"></a>
-        </div>
-    </footer>
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid">
+        <footer class="row">
+            <div class="col-12 flexFooter">
+                <a href="../index.html"><img src="../assets/img/imagenFooter.png" class="iconoFooter"
+                        alt="Logo del campeonato mundial pokémon"></a>
+                <div class="flexRedes">
+                    <a href="https://www.instagram.com/pokemon/?hl=es-la"><img src="../assets/img/instagramsvg.svg"
+                            class="iconoRedes" alt="ícono de instagram"></a>
+                    <a href="https://twitter.com/playpokemon"><img class="iconoRedes" src="../assets/img/twittersvg.svg"
+                            alt="ícono de twitter"></a>
+                    <a href="https://www.facebook.com/PokemonOficialLatAm/?brand_redir=230809307041021"><img
+                            src="../assets/img/facebooksvg.svg" class="iconoRedes" alt="ícono de facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
