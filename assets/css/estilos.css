@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+/* NAV */
+
+.navbar-dark {
+    background-image: linear-gradient(#f59d9dee, #ff0011);
+}
+
+.navbar-brand img {
+    width: 30%;
+}
+
+.navbar-nav {
+    margin-top: 2rem;
+    padding-left: 10rem;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffff !important;
+}
+
+.nav-link:hover {
+    color: #f7de82 !important;
+}
+
+.nav-link:active {
+    color: #950101 !important;
+}
+
+/* FOOTER */
+
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    background-image: linear-gradient(#f59d9dee, #ff0011);
+}
+
+.iconoFooter {
+    width: 100%;
+    max-width: 50px;
+    animation: rotar 30s infinite linear;
+}
+
+@keyframes rotar {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.flexRedes {
+    display: flex;
+}
+
+.iconoRedes {
+    width: 80%;
+}
+
+/* TÍTULOS, SUBTÍTULOS, PÁRRAFOS */
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #ec8f8f;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #ec8f8f;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: #950101;
+}
+
+.encabezadoPaginas {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+    animation-name: encabezado;
+    animation-duration: 15s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+@keyframes encabezado {
+    100% {
+        transform: translateX(35rem);
+    }
+}
+
+.imgEncabezado {
+    width: 9%;
+}
+
+.títuloEncabezado {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+/*INDEX*/
+
+#backgroundIndex {
+    background-color: #f7de82;
+    background-image: url(../img/backgroundIndex.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#flexIndex {
+    display: flex;
+    align-items: center;
+}
+
+#textoIndex {
+    padding-top: 1rem;
+}
+
+#tituloIndex {
+    font-size: 1.8rem;
+}
+
+#subtituloIndex {
+    font-size: 1.2rem;
+}
+
+/* NOTICIAS */
+
+#backgroundNoticias {
+    background-color: #f7de82;
+}
+
+.flexNoticia {
+    display: flex;
+    align-items: center;
+}
+
+.tituloNoticia {
+    font-size: 1.3rem;
+}
+
+.imgNoticia {
+    border-radius: 55px;
+}
+
+.parrafoNoticia {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.parrafoNoticiaImpar {
+    order: -1;
+}
+
+#fondoNoticiaUno {
+    background-color: #293133;
+    background-image: url(../img/fondoNoticiaUno.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fondoNoticiaDos {
+    background-color: #deda6c;
+    background-image: url(../img/fondoNoticiaDos.jpg);
+    background-size: cover;
+}
+
+#fondoNoticiaTres {
+    background-color: #c08c5c;
+    background-image: url(../img/fondoNoticiaTres.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fondoNoticiaCuatro {
+    background-color: #e8813e;
+    background-image: url(../img/fondoNoticiaCuatro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* GALERÍA */
+
+#backgroundGaleria {
+    background-color: #298787;
+    background-image: url(../img/backgroundGaleria.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgGaleria {
+    margin: 1rem 0rem;
+    border-radius: 55px;
+}
+
+/* GANADORES */
+
+#backgroundGanadores {
+    background-color: #b8bbae;
+    background-image: url(../img/backgroundGanadores.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flexGanadores {
+    display: flex;
+    align-items: center;
+}
+
+.imgGanadores {
+    width: 50%;
+    margin: 1rem 0rem;
+    border-radius: 50%;
+}
+
+.textoGanadores {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #950101;
+}
+
+/* INSCRIBIRME */
+
+#backgroundInscribirme {
+    background-color: #484159;
+    background-image: url(../img/backgroundInscribirme.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#tituloInscribirme {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#parrafoInscribirme {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #ec8f8f;
+}
+
+form fieldset label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ec8f8f;
+}
+
+::placeholder {
+    color: #484159 !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    background-color: rgba(172, 187, 194, 0.877) !important;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
+
+input[type="text"]:valid {
+    background-color: rgba(1, 252, 43, 0.514) !important;
+    color: white !important;
+}
+
+input[type="number"]:valid {
+    background-color: rgba(1, 252, 43, 0.514) !important;
+    color: white !important;
+}
+
+textarea:valid {
+    background-color: rgba(1, 252, 43, 0.514) !important;
+    color: white !important;
+}
+
+select:valid {
+    background-color: rgba(1, 252, 43, 0.514) !important;
+    color: white !important;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 0;
+    background: #ec8f8f;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(224, 125, 11);
+    color: white;
+}
+
+input[type="submit"]:active {
+    box-shadow: none !important;
+    background-color: rgba(1, 252, 43, 0.514) !important;
+    color: white !important;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:768px) {
+
+    /* NAV */
+
+    .navbar-nav {
+        padding-left: 0rem;
+    }
+
+    /* IMÁGEN ENCABEZADO PÁGINAS */
+
+    .imgEncabezado {
+        width: 14%;
+    }
+
+    /* INDEX */
+
+    #backgroundIndex {
+        background-image: none;
+    }
+
+    #iframeIndex {
+        margin-bottom: 1rem;
+    }
+
+    /* NOTICIAS */
+
+    .flexNoticia {
+        padding-top: 1rem;
+    }
+
+    .parrafoNoticiaImpar {
+        order: 1;
+    }
+
+    #fondoNoticiaUno {
+        background-image: none;
+    }
+
+    #fondoNoticiaDos {
+        background-image: none;
+    }
+
+    #fondoNoticiaTres {
+        background-image: none;
+    }
+
+    #fondoNoticiaCuatro {
+        background-image: none;
+    }
+
+    /* GALERÍA */
+
+    #backgroundGaleria {
+        background-image: none;
+    }
+
+    /* GANADORES */
+
+    #backgroundGanadores {
+        background-image: none;
+    }
+
+    /* INSCRIBIRME */
+
+    #backgroundInscribirme {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width:386px) {
+
+    /* NAV */
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar-toggler {
+        transform: translate(15rem, -4rem);
+    }
+
+}
