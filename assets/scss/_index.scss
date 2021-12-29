@@ -1,0 +1,32 @@
+#backgroundIndex {
+    background-color: $colorAmarillo;
+    background-image: url(../img/backgroundIndex.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width:768px){
+        background-image: none;
+    }
+
+    & #flexIndex {
+        display: flex;
+        align-items: center;
+
+        & #textoIndex {
+            padding-top: 1rem;
+
+            & #tituloIndex {
+                font-size: 1.8rem;
+            }
+
+            & #subtituloIndex {
+                font-size: 1.2rem;
+            }
+        }
+        & #iframeIndex{
+            @media only screen and (max-width:768px) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

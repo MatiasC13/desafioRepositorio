@@ -1,0 +1,79 @@
+#backgroundNoticias {
+    background-color: $colorAmarillo;
+
+    & .flexNoticia {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width:768px) {
+            padding-top: 1rem;
+        }
+
+        & .imgNoticia {
+            border-radius: 55px;
+        }
+
+        & .parrafoNoticia {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            & .tituloNoticia {
+                font-size: 1.3rem;
+            }
+
+        }
+
+        & .parrafoNoticiaImpar {
+            order: -1;
+
+            @media only screen and (max-width:768px) {
+                order: 1;
+            }
+        }
+
+    }
+
+    & #fondoNoticiaUno {
+        background-color: #293133;
+        background-image: url(../img/fondoNoticiaUno.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media only screen and (max-width:768px) {
+            background-image: none;
+        }
+    }
+
+    & #fondoNoticiaDos {
+        background-color: #deda6c;
+        background-image: url(../img/fondoNoticiaDos.jpg);
+        background-size: cover;
+
+        @media only screen and (max-width:768px) {
+            background-image: none;
+        }
+    }
+
+    & #fondoNoticiaTres {
+        background-color: #c08c5c;
+        background-image: url(../img/fondoNoticiaTres.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media only screen and (max-width:768px) {
+            background-image: none;
+        }
+    }
+
+    & #fondoNoticiaCuatro {
+        background-color: #e8813e;
+        background-image: url(../img/fondoNoticiaCuatro.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+
+        @media only screen and (max-width:768px) {
+            background-image: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.encabezadoPaginas {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+    animation-name: encabezado;
+    animation-duration: 15s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    & .imgEncabezado {
+        width: 9%;
+
+        @media only screen and (max-width:768px){
+            width: 14%;
+        }
+    }
+    & .títuloEncabezado {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        font-family: $fuenteTitulo;
+        font-weight: bold;
+    }
+}
+
+@keyframes encabezado {
+    100% {
+        transform: translateX(35rem);
+    }
+}
+
+
+

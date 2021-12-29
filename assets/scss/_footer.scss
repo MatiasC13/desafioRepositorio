@@ -1,0 +1,33 @@
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    background-image: linear-gradient(#f59d9dee, #ff0011);
+
+    & .iconoFooter {
+        width: 100%;
+        max-width: 50px;
+        animation: rotar 30s infinite linear;
+    }
+
+    @keyframes rotar {
+
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    & .flexRedes {
+        display: flex;
+
+        & .iconoRedes {
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+#backgroundGaleria {
+    background-color: #298787;
+    background-image: url(../img/backgroundGaleria.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width:768px) {
+        background-image: none;
+    }
+
+    & .imgGaleria {
+        margin: 1rem 0rem;
+        border-radius: 55px;
+    }
+}

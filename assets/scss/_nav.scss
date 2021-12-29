@@ -1,0 +1,47 @@
+.navbar {
+    @media only screen and (max-width:386px) {
+        display: inline-block;
+    }
+}
+
+.navbar-dark {
+    background-image: linear-gradient(#f59d9dee, #ff0011);
+
+    & img {
+        width: 30%;
+    }
+
+    & .navbar-toggler {
+
+        @media only screen and (max-width:386px) {
+            transform: translate(15rem, -4rem);
+        }
+    }
+
+    & .navbar-nav {
+        margin-top: 2rem;
+        padding-left: 10rem;
+
+        @media only screen and (max-width:768px) {
+            padding-left: 0rem;
+        }
+
+        & .nav-item {
+            font-family: $fuenteParrafo;
+            font-weight: bold;
+
+            & .nav-link {
+                color: #ffff !important;
+            }
+
+            :hover {
+                color: $colorAmarillo !important;
+            }
+
+            :active {
+                color: $colorParrafo !important;
+            }
+
+        }
+    }
+}
