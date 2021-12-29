@@ -451,6 +451,8 @@ input[type="submit"]:active {
   }
 }
 
+/* Header */
+
 header {
   position: -webkit-sticky;
   position: sticky;
