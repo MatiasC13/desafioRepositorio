@@ -4,87 +4,89 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-}
-
-#tituloInscribirme {
-    text-align: center;
-    padding-top: 1rem;
-}
-
-#parrafoInscribirme {
-    text-align: center;
-    padding-bottom: 1rem;
-    color: #ec8f8f;
-}
-
-form fieldset label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #ec8f8f;
-}
-
-::placeholder {
-    color: #484159 !important;
-}
-
-textarea {
-    resize: none;
-}
-
-.form-control {
-    background-color: rgba(172, 187, 194, 0.877) !important;
-    border: 0;
-}
-
-.form-control:focus {
-    box-shadow: none !important;
-    border-color: #ced4da !important;
-}
-
-input[type="text"]:valid {
-    background-color: rgba(1, 252, 43, 0.514) !important;
-    color: white !important;
-}
-
-input[type="number"]:valid {
-    background-color: rgba(1, 252, 43, 0.514) !important;
-    color: white !important;
-}
-
-textarea:valid {
-    background-color: rgba(1, 252, 43, 0.514) !important;
-    color: white !important;
-}
-
-select:valid {
-    background-color: rgba(1, 252, 43, 0.514) !important;
-    color: white !important;
-}
-
-input[type="submit"] {
-    width: 100%;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    border: 0;
-    background: #ec8f8f;
-    color: white;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(224, 125, 11);
-    color: white;
-}
-
-input[type="submit"]:active {
-    box-shadow: none !important;
-    background-color: rgba(1, 252, 43, 0.514) !important;
-    color: white !important;
-}
-
-@media only screen and (max-width:768px) {
+    
+    
+    @media only screen and (max-width:768px) {
     #backgroundInscribirme {
         background-image: none;
     }
 }
+
+    & #tituloInscribirme {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+        & #parrafoInscribirme {
+            text-align: center;
+            padding-bottom: 1rem;
+            color: #ec8f8f;
+        }
+
+            & label {
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                color: #ec8f8f;
+            }
+
+            & .form-control {
+                background-color: rgba(172, 187, 194, 0.877) !important;
+                border: 0;
+            }
+
+            & .form-control:focus {
+                box-shadow: none !important;
+                border-color: #ced4da !important;
+            }
+            
+
+            & textarea {
+                resize: none;
+            }
+
+            & input[type="text"]:valid, input[type="number"]:valid, select:valid, textarea:valid{
+                background-color: rgba(1, 252, 43, 0.514) !important;
+                color: white !important;
+            } 
+
+            & ::placeholder {
+                color: #484159 !important;
+            }
+            
+        & input[type="submit"] {
+            width: 100%;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            border: 0;
+            background: #ec8f8f;
+            color: white;
+        }
+        
+        & input[type="submit"]:hover {
+            background-color: rgb(224, 125, 11);
+            color: white;
+        } 
+
+        & input[type="submit"]:active {
+            box-shadow: none;
+            background-color: rgba(1, 252, 43, 0.514) !important;
+            color: white !important;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

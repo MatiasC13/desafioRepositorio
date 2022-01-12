@@ -354,75 +354,66 @@
   background-position: bottom;
 }
 
-#tituloInscribirme {
+@media only screen and (max-width: 768px) {
+  #backgroundInscribirme #backgroundInscribirme {
+    background-image: none;
+  }
+}
+
+#backgroundInscribirme #tituloInscribirme {
   text-align: center;
   padding-top: 1rem;
 }
 
-#parrafoInscribirme {
+#backgroundInscribirme #parrafoInscribirme {
   text-align: center;
   padding-bottom: 1rem;
   color: #ec8f8f;
 }
 
-form fieldset label {
+#backgroundInscribirme label {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #ec8f8f;
 }
 
-::-webkit-input-placeholder {
-  color: #484159 !important;
-}
-
-:-ms-input-placeholder {
-  color: #484159 !important;
-}
-
-::-ms-input-placeholder {
-  color: #484159 !important;
-}
-
-::placeholder {
-  color: #484159 !important;
-}
-
-textarea {
-  resize: none;
-}
-
-.form-control {
+#backgroundInscribirme .form-control {
   background-color: rgba(172, 187, 194, 0.877) !important;
   border: 0;
 }
 
-.form-control:focus {
+#backgroundInscribirme .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border-color: #ced4da !important;
 }
 
-input[type="text"]:valid {
+#backgroundInscribirme textarea {
+  resize: none;
+}
+
+#backgroundInscribirme input[type="text"]:valid, #backgroundInscribirme input[type="number"]:valid, #backgroundInscribirme select:valid, #backgroundInscribirme textarea:valid {
   background-color: rgba(1, 252, 43, 0.514) !important;
   color: white !important;
 }
 
-input[type="number"]:valid {
-  background-color: rgba(1, 252, 43, 0.514) !important;
-  color: white !important;
+#backgroundInscribirme ::-webkit-input-placeholder {
+  color: #484159 !important;
 }
 
-textarea:valid {
-  background-color: rgba(1, 252, 43, 0.514) !important;
-  color: white !important;
+#backgroundInscribirme :-ms-input-placeholder {
+  color: #484159 !important;
 }
 
-select:valid {
-  background-color: rgba(1, 252, 43, 0.514) !important;
-  color: white !important;
+#backgroundInscribirme ::-ms-input-placeholder {
+  color: #484159 !important;
 }
 
-input[type="submit"] {
+#backgroundInscribirme ::placeholder {
+  color: #484159 !important;
+}
+
+#backgroundInscribirme input[type="submit"] {
   width: 100%;
   margin-bottom: 1rem;
   letter-spacing: 2px;
@@ -433,25 +424,17 @@ input[type="submit"] {
   color: white;
 }
 
-input[type="submit"]:hover {
+#backgroundInscribirme input[type="submit"]:hover {
   background-color: #e07d0b;
   color: white;
 }
 
-input[type="submit"]:active {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+#backgroundInscribirme input[type="submit"]:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(1, 252, 43, 0.514) !important;
   color: white !important;
 }
-
-@media only screen and (max-width: 768px) {
-  #backgroundInscribirme {
-    background-image: none;
-  }
-}
-
-/* Header */
 
 header {
   position: -webkit-sticky;
