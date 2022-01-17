@@ -443,6 +443,12 @@ header {
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  .background {
+    background-image: none;
+  }
+}
+
 /* TÍTULOS, SUBTÍTULOS, PÁRRAFOS */
 h1 {
   font-size: 2rem;
