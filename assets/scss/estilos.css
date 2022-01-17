@@ -162,12 +162,6 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  #backgroundIndex {
-    background-image: none;
-  }
-}
-
 #backgroundIndex #flexIndex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,12 +294,6 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  #backgroundGaleria {
-    background-image: none;
-  }
-}
-
 #backgroundGaleria .imgGaleria {
   margin: 1rem 0rem;
   border-radius: 55px;
@@ -317,12 +305,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media only screen and (max-width: 768px) {
-  #backgroundGanadores {
-    background-image: none;
-  }
 }
 
 #backgroundGanadores .flexGanadores {
@@ -352,12 +334,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-}
-
-@media only screen and (max-width: 768px) {
-  #backgroundInscribirme #backgroundInscribirme {
-    background-image: none;
-  }
 }
 
 #backgroundInscribirme #tituloInscribirme {
@@ -444,7 +420,7 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .background {
+  .background, #backgroundIndex, #backgroundGaleria, #backgroundGanadores, #backgroundInscribirme {
     background-image: none;
   }
 }

@@ -4,13 +4,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    
-    
-    @media only screen and (max-width:768px) {
-    #backgroundInscribirme {
-        background-image: none;
-    }
-}
+    @extend .background;
 
     & #tituloInscribirme {
         text-align: center;
