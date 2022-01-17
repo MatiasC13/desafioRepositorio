@@ -189,6 +189,14 @@
   }
 }
 
+#backgroundIndex #flexIndex #carrusel {
+  padding-bottom: 1rem;
+}
+
+#backgroundIndex #flexIndex #carrusel #subtituloCarrusel {
+  text-align: center;
+}
+
 #backgroundNoticias {
   background-color: #f7de82;
 }
