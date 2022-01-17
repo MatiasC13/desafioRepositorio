@@ -250,22 +250,10 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  #backgroundNoticias #fondoNoticiaUno {
-    background-image: none;
-  }
-}
-
 #backgroundNoticias #fondoNoticiaDos {
-  background-color: #deda6c;
+  background-color: #f7de82;
   background-image: url(../img/fondoNoticiaDos.jpg);
   background-size: cover;
-}
-
-@media only screen and (max-width: 768px) {
-  #backgroundNoticias #fondoNoticiaDos {
-    background-image: none;
-  }
 }
 
 #backgroundNoticias #fondoNoticiaTres {
@@ -275,24 +263,12 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  #backgroundNoticias #fondoNoticiaTres {
-    background-image: none;
-  }
-}
-
 #backgroundNoticias #fondoNoticiaCuatro {
   background-color: #e8813e;
   background-image: url(../img/fondoNoticiaCuatro.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-}
-
-@media only screen and (max-width: 768px) {
-  #backgroundNoticias #fondoNoticiaCuatro {
-    background-image: none;
-  }
 }
 
 #backgroundGaleria {
@@ -428,7 +404,7 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  .background, #backgroundIndex, #backgroundGaleria, #backgroundGanadores, #backgroundInscribirme {
+  .background, #backgroundIndex, #backgroundNoticias #fondoNoticiaUno, #backgroundNoticias #fondoNoticiaDos, #backgroundNoticias #fondoNoticiaTres, #backgroundNoticias #fondoNoticiaCuatro, #backgroundGaleria, #backgroundGanadores, #backgroundInscribirme {
     background-image: none;
   }
 }

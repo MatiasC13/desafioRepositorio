@@ -34,46 +34,34 @@
     }
 
     & #fondoNoticiaUno {
-        background-color: #293133;
+        background-color: $colorNoticiaUno;
         background-image: url(../img/fondoNoticiaUno.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-
-        @media only screen and (max-width:768px) {
-            background-image: none;
-        }
+        @extend .background;
     }
 
     & #fondoNoticiaDos {
-        background-color: #deda6c;
+        background-color: $colorAmarillo;
         background-image: url(../img/fondoNoticiaDos.jpg);
         background-size: cover;
-
-        @media only screen and (max-width:768px) {
-            background-image: none;
-        }
+        @extend .background;
     }
 
     & #fondoNoticiaTres {
-        background-color: #c08c5c;
+        background-color: $colorNoticiaTres;
         background-image: url(../img/fondoNoticiaTres.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-
-        @media only screen and (max-width:768px) {
-            background-image: none;
-        }
+        @extend .background;
     }
 
     & #fondoNoticiaCuatro {
-        background-color: #e8813e;
+        background-color: $colorNoticiaCuatro;
         background-image: url(../img/fondoNoticiaCuatro.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
-
-        @media only screen and (max-width:768px) {
-            background-image: none;
-        }
+        @extend .background;
     }
 }
