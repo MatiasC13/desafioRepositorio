@@ -184,7 +184,7 @@
 }
 
 #backgroundIndex #flexIndex #iframeIndex {
-  margin-top: 1rem;
+  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 768px) {
