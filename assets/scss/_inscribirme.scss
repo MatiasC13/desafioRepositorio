@@ -1,5 +1,5 @@
 #backgroundInscribirme {
-    background-color: #484159;
+    background-color: $colorInscribirme;
     background-image: url(../img/backgroundInscribirme.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -14,13 +14,13 @@
         & #parrafoInscribirme {
             text-align: center;
             padding-bottom: 1rem;
-            color: #ec8f8f;
+            color: $colorEncabezado;
         }
 
             & label {
-                font-family: 'Roboto', sans-serif;
+                font-family: $fuenteParrafo;
                 font-weight: bold;
-                color: #ec8f8f;
+                color: $colorEncabezado;
             }
 
             & .form-control {
@@ -39,7 +39,7 @@
             }
 
             & input[type="text"]:valid, input[type="number"]:valid, select:valid, textarea:valid{
-                background-color: rgba(1, 252, 43, 0.514) !important;
+                background-color: $colorSuccessForm !important;
                 color: white !important;
             } 
 
@@ -65,7 +65,7 @@
 
         & input[type="submit"]:active {
             box-shadow: none;
-            background-color: rgba(1, 252, 43, 0.514) !important;
+            background-color: $colorSuccessForm !important;
             color: white !important;
         }
 }
