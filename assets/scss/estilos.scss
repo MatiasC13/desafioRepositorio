@@ -29,23 +29,25 @@ header {
 
 /* TÍTULOS, SUBTÍTULOS, PÁRRAFOS */
 
+// MIXIN
+
+@mixin fuentes($size, $family, $color) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+}
+
 h1 {
-    font-size: 2rem;
-    font-family: $fuenteTitulo;
+    @include fuentes(2rem, $fuenteTitulo, $colorEncabezado);
     font-weight: bold;
-    color: $colorEncabezado;
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-family: $fuenteSubtitulo;
+    @include fuentes(1.5rem, $fuenteSubtitulo, $colorEncabezado);
     font-weight: bold;
-    color: $colorEncabezado;
 }
 
 p {
-    font-size: 1rem;
-    font-family: $fuenteParrafo;
+    @include fuentes(1rem, $fuenteParrafo, $colorParrafo);
     text-align: justify;
-    color: $colorParrafo;
 }
