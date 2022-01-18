@@ -183,13 +183,8 @@
   font-size: 1.2rem;
 }
 
-#backgroundIndex #flexIndex #iframeIndex {
-  margin-top: 2rem;
-}
-
 @media only screen and (max-width: 768px) {
   #backgroundIndex #flexIndex #iframeIndex {
-    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
