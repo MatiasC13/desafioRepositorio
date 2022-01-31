@@ -224,8 +224,8 @@
   padding-bottom: 1rem;
 }
 
-#backgroundNoticias .flexNoticia .parrafoNoticia .tituloNoticia {
-  font-size: 1.3rem;
+#backgroundNoticias .flexNoticia .parrafoNoticia #tituloNoticia {
+  margin-bottom: 2rem;
 }
 
 #backgroundNoticias .flexNoticia .parrafoNoticiaImpar {
@@ -244,7 +244,7 @@
 
 #backgroundNoticias #fondoNoticiaUno {
   background-color: #b8bbae;
-  background-image: url(../img/fondoNoticiaUno.jpg);
+  background-image: url(../img/fondoNoticiaUno.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

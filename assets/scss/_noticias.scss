@@ -17,10 +17,9 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
 
-            & .tituloNoticia {
-                font-size: 1.3rem;
+            & #tituloNoticia{
+                margin-bottom: 2rem;
             }
-
         }
 
         & .parrafoNoticiaImpar {
@@ -35,7 +34,7 @@
 
     & #fondoNoticiaUno {
         background-color: $colorNoticiaUno;
-        background-image: url(../img/fondoNoticiaUno.jpg);
+        background-image: url(../img/fondoNoticiaUno.png);
         background-size: contain;
         background-repeat: no-repeat;
         @extend .background;
