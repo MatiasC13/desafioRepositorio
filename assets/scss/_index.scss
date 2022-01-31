@@ -12,25 +12,26 @@
         & #textoIndex {
             padding-top: 1rem;
 
-            & #tituloIndex {
-                font-size: 1.8rem;
-            }
-
-            & #subtituloIndex {
-                font-size: 1.2rem;
+            & #parrafoIndex {
+                margin-top: 1rem;
             }
         }
 
         & #iframeIndex{
+            margin-top: 3rem;
 
             @media only screen and (max-width:768px) {
                 margin-bottom: 1rem;
             }
         }
-
+        
         & #carrusel{
-            padding-bottom: 1rem;
+            padding: 2rem 0rem 1rem 0rem;
             
+            @media only screen and (min-width:768px){
+                width: 37rem;
+            }
+
             & #subtituloCarrusel{
                 text-align: center;
             }

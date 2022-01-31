@@ -168,12 +168,12 @@
   padding-top: 1rem;
 }
 
-#backgroundIndex #flexIndex #textoIndex #tituloIndex {
-  font-size: 1.8rem;
+#backgroundIndex #flexIndex #textoIndex #parrafoIndex {
+  margin-top: 1rem;
 }
 
-#backgroundIndex #flexIndex #textoIndex #subtituloIndex {
-  font-size: 1.2rem;
+#backgroundIndex #flexIndex #iframeIndex {
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -183,7 +183,13 @@
 }
 
 #backgroundIndex #flexIndex #carrusel {
-  padding-bottom: 1rem;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #backgroundIndex #flexIndex #carrusel {
+    width: 37rem;
+  }
 }
 
 #backgroundIndex #flexIndex #carrusel #subtituloCarrusel {
