@@ -321,18 +321,20 @@
 #backgroundInscribirme #tituloInscribirme {
   text-align: center;
   padding-top: 1rem;
+  font-size: 2.7rem;
+  color: #ec8f8f;
 }
 
 #backgroundInscribirme #parrafoInscribirme {
   text-align: center;
   padding-bottom: 1rem;
-  color: #950101;
+  color: #ec8f8f;
 }
 
 #backgroundInscribirme label {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #950101;
+  color: #ec8f8f;
 }
 
 #backgroundInscribirme .form-control {

@@ -9,18 +9,20 @@
     & #tituloInscribirme {
         text-align: center;
         padding-top: 1rem;
+        font-size: 2.7rem;
+        color: $colorFuenteInscribirme;
     }
 
         & #parrafoInscribirme {
             text-align: center;
             padding-bottom: 1rem;
-            color: $colorEncabezado;
+            color: $colorFuenteInscribirme;
         }
 
             & label {
                 font-family: $fuenteParrafo;
                 font-weight: bold;
-                color: $colorEncabezado;
+                color: $colorFuenteInscribirme;
             }
 
             & .form-control {
