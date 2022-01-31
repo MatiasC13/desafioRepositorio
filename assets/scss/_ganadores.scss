@@ -1,9 +1,8 @@
 #backgroundGanadores {
     background-color: $colorGanadores;
     background-image: url(../img/backgroundGanadores.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: center right;
     @extend .background;
     
     & .flexGanadores {

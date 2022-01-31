@@ -285,9 +285,8 @@
 #backgroundGanadores {
   background-color: #f4b186;
   background-image: url(../img/backgroundGanadores.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position: center right;
 }
 
 #backgroundGanadores .flexGanadores {
