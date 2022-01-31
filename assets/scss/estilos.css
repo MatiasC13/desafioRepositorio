@@ -86,7 +86,11 @@
   width: 80%;
 }
 
-.encabezadoPaginas {
+.container-fluid {
+  overflow: hidden;
+}
+
+.container-fluid .encabezadoPaginas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,34 +110,41 @@
           animation-iteration-count: 1;
 }
 
-.encabezadoPaginas .imgEncabezado {
-  width: 9%;
+.container-fluid .encabezadoPaginas .imgEncabezado {
+  width: 100%;
+  max-width: 90px;
 }
 
 @media only screen and (max-width: 768px) {
-  .encabezadoPaginas .imgEncabezado {
-    width: 14%;
+  .container-fluid .encabezadoPaginas .imgEncabezado {
+    max-width: 60px;
   }
 }
 
-.encabezadoPaginas .títuloEncabezado {
+.container-fluid .encabezadoPaginas .títuloEncabezado {
   margin-left: 0.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-fluid .encabezadoPaginas .títuloEncabezado {
+    font-size: 2rem;
+  }
+}
+
 @-webkit-keyframes encabezado {
   100% {
-    -webkit-transform: translateX(35rem);
-            transform: translateX(35rem);
+    -webkit-transform: translateX(50rem);
+            transform: translateX(50rem);
   }
 }
 
 @keyframes encabezado {
   100% {
-    -webkit-transform: translateX(35rem);
-            transform: translateX(35rem);
+    -webkit-transform: translateX(50rem);
+            transform: translateX(50rem);
   }
 }
 

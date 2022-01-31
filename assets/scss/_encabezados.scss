@@ -1,33 +1,42 @@
-.encabezadoPaginas {
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-    margin-left: 0.1rem;
-    animation-name: encabezado;
-    animation-duration: 15s;
-    animation-direction: reverse;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    & .imgEncabezado {
-        width: 9%;
+.container-fluid {
+    overflow: hidden;
 
-        @media only screen and (max-width:768px){
-            width: 14%;
+    & .encabezadoPaginas {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-left: 0.1rem;
+        animation-name: encabezado;
+        animation-duration: 15s;
+        animation-direction: reverse;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+
+        & .imgEncabezado {
+            width: 100%;
+            max-width: 90px;
+
+            @media only screen and (max-width:768px) {
+                max-width: 60px;
+            }
+        }
+
+        & .títuloEncabezado {
+            margin-left: 0.5rem;
+            font-size: 3rem;
+
+            @media only screen and (max-width:768px){
+                font-size: 2rem;
+            }
+            font-family: $fuenteTitulo;
+            font-weight: bold;
         }
     }
-    & .títuloEncabezado {
-        margin-left: 0.5rem;
-        font-size: 2rem;
-        font-family: $fuenteTitulo;
-        font-weight: bold;
-    }
 }
 
-@keyframes encabezado {
-    100% {
-        transform: translateX(35rem);
+    @keyframes encabezado {
+        100% {
+            transform: translateX(50rem);
+        }
     }
-}
-
-
 
