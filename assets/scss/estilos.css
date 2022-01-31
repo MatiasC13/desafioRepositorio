@@ -47,7 +47,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-item :active {
-  color: #950101 !important;
+  color: #484159 !important;
 }
 
 .flexFooter {
@@ -244,7 +244,7 @@
 }
 
 #backgroundNoticias #fondoNoticiaUno {
-  background-color: #293133;
+  background-color: #b8bbae;
   background-image: url(../img/fondoNoticiaUno.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -284,7 +284,7 @@
 }
 
 #backgroundGanadores {
-  background-color: #b8bbae;
+  background-color: #f4b186;
   background-image: url(../img/backgroundGanadores.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@
 #backgroundGanadores .flexGanadores .textoGanadores {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #950101;
+  color: #484159;
 }
 
 #backgroundInscribirme {
@@ -328,13 +328,13 @@
 #backgroundInscribirme #parrafoInscribirme {
   text-align: center;
   padding-bottom: 1rem;
-  color: #ec8f8f;
+  color: #950101;
 }
 
 #backgroundInscribirme label {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #ec8f8f;
+  color: #950101;
 }
 
 #backgroundInscribirme .form-control {
@@ -413,21 +413,21 @@ header {
 h1 {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
-  color: #ec8f8f;
+  color: #950101;
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  color: #ec8f8f;
+  color: #950101;
   font-weight: bold;
 }
 
 p {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  color: #950101;
+  color: #484159;
   text-align: justify;
 }
 /*# sourceMappingURL=estilos.css.map */
