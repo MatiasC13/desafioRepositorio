@@ -1,39 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400&display=swap");
-@media only screen and (max-width: 386px) {
-  .navbar {
-    display: inline-block;
-  }
-}
-
 .navbar-dark {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f59d9dee), to(#ff0011));
   background-image: linear-gradient(#f59d9dee, #ff0011);
 }
 
 .navbar-dark img {
-  width: 30%;
-}
-
-@media only screen and (max-width: 386px) {
-  .navbar-dark .navbar-toggler {
-    -webkit-transform: translate(15rem, -4rem);
-            transform: translate(15rem, -4rem);
-  }
+  width: 100%;
+  max-width: 90px;
 }
 
 .navbar-dark .navbar-nav {
-  margin-top: 2rem;
-  padding-left: 10rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .navbar-dark .navbar-nav {
-    padding-left: 0rem;
-  }
+  margin-top: 3rem;
 }
 
 .navbar-dark .navbar-nav .nav-item {
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
@@ -104,7 +86,11 @@
   width: 80%;
 }
 
-.encabezadoPaginas {
+.container-fluid {
+  overflow: hidden;
+}
+
+.container-fluid .encabezadoPaginas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,34 +110,41 @@
           animation-iteration-count: 1;
 }
 
-.encabezadoPaginas .imgEncabezado {
-  width: 9%;
+.container-fluid .encabezadoPaginas .imgEncabezado {
+  width: 100%;
+  max-width: 90px;
 }
 
 @media only screen and (max-width: 768px) {
-  .encabezadoPaginas .imgEncabezado {
-    width: 14%;
+  .container-fluid .encabezadoPaginas .imgEncabezado {
+    max-width: 60px;
   }
 }
 
-.encabezadoPaginas .títuloEncabezado {
+.container-fluid .encabezadoPaginas .títuloEncabezado {
   margin-left: 0.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-fluid .encabezadoPaginas .títuloEncabezado {
+    font-size: 2rem;
+  }
+}
+
 @-webkit-keyframes encabezado {
   100% {
-    -webkit-transform: translateX(35rem);
-            transform: translateX(35rem);
+    -webkit-transform: translateX(50rem);
+            transform: translateX(50rem);
   }
 }
 
 @keyframes encabezado {
   100% {
-    -webkit-transform: translateX(35rem);
-            transform: translateX(35rem);
+    -webkit-transform: translateX(50rem);
+            transform: translateX(50rem);
   }
 }
 
@@ -175,12 +168,12 @@
   padding-top: 1rem;
 }
 
-#backgroundIndex #flexIndex #textoIndex #tituloIndex {
-  font-size: 1.8rem;
+#backgroundIndex #flexIndex #textoIndex #parrafoIndex {
+  margin-top: 1rem;
 }
 
-#backgroundIndex #flexIndex #textoIndex #subtituloIndex {
-  font-size: 1.2rem;
+#backgroundIndex #flexIndex #iframeIndex {
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -190,7 +183,13 @@
 }
 
 #backgroundIndex #flexIndex #carrusel {
-  padding-bottom: 1rem;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #backgroundIndex #flexIndex #carrusel {
+    width: 37rem;
+  }
 }
 
 #backgroundIndex #flexIndex #carrusel #subtituloCarrusel {
@@ -225,8 +224,8 @@
   padding-bottom: 1rem;
 }
 
-#backgroundNoticias .flexNoticia .parrafoNoticia .tituloNoticia {
-  font-size: 1.3rem;
+#backgroundNoticias .flexNoticia .parrafoNoticia #tituloNoticia {
+  margin-bottom: 2rem;
 }
 
 #backgroundNoticias .flexNoticia .parrafoNoticiaImpar {
@@ -244,8 +243,8 @@
 }
 
 #backgroundNoticias #fondoNoticiaUno {
-  background-color: #293133;
-  background-image: url(../img/fondoNoticiaUno.jpg);
+  background-color: #b8bbae;
+  background-image: url(../img/fondoNoticiaUno.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -279,16 +278,15 @@
 }
 
 #backgroundGaleria .imgGaleria {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
   border-radius: 55px;
 }
 
 #backgroundGanadores {
-  background-color: #b8bbae;
+  background-color: #f4b186;
   background-image: url(../img/backgroundGanadores.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position: center right;
 }
 
 #backgroundGanadores .flexGanadores {
@@ -309,7 +307,7 @@
 #backgroundGanadores .flexGanadores .textoGanadores {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #950101;
+  color: #484159;
 }
 
 #backgroundInscribirme {
@@ -323,6 +321,8 @@
 #backgroundInscribirme #tituloInscribirme {
   text-align: center;
   padding-top: 1rem;
+  font-size: 2.7rem;
+  color: #ec8f8f;
 }
 
 #backgroundInscribirme #parrafoInscribirme {
@@ -413,21 +413,21 @@ header {
 h1 {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
-  color: #ec8f8f;
+  color: #950101;
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  color: #ec8f8f;
+  color: #950101;
   font-weight: bold;
 }
 
 p {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
-  color: #950101;
+  color: #484159;
   text-align: justify;
 }
 /*# sourceMappingURL=estilos.css.map */
